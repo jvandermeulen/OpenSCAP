@@ -75,7 +75,7 @@ tailoring all in one
 
 profiles
 
-[root@tst-vsu-tst-002 content]# oscap info “/usr/share/xml/scap/ssg/content/ssg-rhel7-ds.xml”
+[root@rhelserver content]# oscap info “/usr/share/xml/scap/ssg/content/ssg-rhel7-ds.xml”
 Document type: Source Data Stream
 Imported: 2015-10-02T12:17:44
 
@@ -103,14 +103,14 @@ Bekijken van score (nagios checks)
 
 benodigd: perl-XML-XPath rpm
 
-[root@rhelserver openscap-rhel6]# xpath xccdf-results.xml '/Benchmark/TestResult/score/text()'
+    [root@rhelserver openscap-rhel6]# xpath xccdf-results.xml '/Benchmark/TestResult/score/text()'
 Found 1 nodes:
 – NODE –
 51.971725
-[root@rhelserver openscap-rhel6]# xpath xccdf-results.xml '/Benchmark/TestResult/score'
+    [root@rhelserver openscap-rhel6]# xpath xccdf-results.xml '/Benchmark/TestResult/score'
 Found 1 nodes:
 – NODE –
 
 <score system="urn:xccdf:scoring:default" maximum="100.000000">51.971725</score>
 
-Het interpreteren van de score
+## Het interpreteren van de score
