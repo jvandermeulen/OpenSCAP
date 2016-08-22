@@ -114,3 +114,6 @@ Found 1 nodes:
 <score system="urn:xccdf:scoring:default" maximum="100.000000">51.971725</score>
 
 ## Het interpreteren van de score
+
+voorbeeld check_http_xpath.pl (nagios exchange)
+benodigd perl-libwww-perl
