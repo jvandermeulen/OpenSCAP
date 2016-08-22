@@ -25,7 +25,7 @@
 
 ## tailoring als tweede stap
 
-- oscap xccdf eval --profile xccdf_org.tweedekamer_profile_rht-ccp_tailored --results /root/openscap-rhel7/scan-xccdf-results7.xml --tailoring-file /usr/share/xml/scap/ssg/content/ssg-rhel7-ds-tailoring.xml  /usr/share/xml/scap/ssg/content/ssg-rhel7-ds.xml
+- oscap xccdf eval --profile xccdf_org.customer_profile_rht-ccp_tailored --results /root/openscap-rhel7/scan-xccdf-results7.xml --tailoring-file /usr/share/xml/scap/ssg/content/ssg-rhel7-ds-tailoring.xml  /usr/share/xml/scap/ssg/content/ssg-rhel7-ds.xml
 
 ​
 
@@ -33,7 +33,7 @@
 
 ​
 
-- oscap xccdf eval --profile xccdf_org.tweedekamer_profile_rht-ccp_tailored --results /root/openscap-rhel7/scan-xccdf-results7.xml --report /var/www/html/index.html --tailoring-file /usr/share/xml/scap/ssg/content/ssg-rhel7-ds-tailoring.xml  /usr/share/xml/scap/ssg/content/ssg-rhel7-ds.xml
+- oscap xccdf eval --profile xccdf_org.customer_profile_rht-ccp_tailored --results /root/openscap-rhel7/scan-xccdf-results7.xml --report /var/www/html/index.html --tailoring-file /usr/share/xml/scap/ssg/content/ssg-rhel7-ds-tailoring.xml  /usr/share/xml/scap/ssg/content/ssg-rhel7-ds.xml
 
 ​
 
@@ -67,11 +67,11 @@ RHEL 7
 
 tailoring als tweede stap
 
-    oscap xccdf eval –profile xccdf_org.tweedekamer_profile_rht-ccp_tailored –results /root/openscap-rhel7/scan-xccdf-results7.xml –tailoring-file /usr/share/xml/scap/ssg/content/ssg-rhel7-ds-tailoring.xml /usr/share/xml/scap/ssg/content/ssg-rhel7-ds.xml
+    oscap xccdf eval –profile xccdf_org.customer_profile_rht-ccp_tailored –results /root/openscap-rhel7/scan-xccdf-results7.xml –tailoring-file /usr/share/xml/scap/ssg/content/ssg-rhel7-ds-tailoring.xml /usr/share/xml/scap/ssg/content/ssg-rhel7-ds.xml
 
 tailoring all in one
 
-    oscap xccdf eval –profile xccdf_org.tweedekamer_profile_rht-ccp_tailored –results /root/openscap-rhel7/scan-xccdf-results7.xml –report /var/www/html/index.html –tailoring-file /usr/share/xml/scap/ssg/content/ssg-rhel7-ds-tailoring.xml /usr/share/xml/scap/ssg/content/ssg-rhel7-ds.xml
+    oscap xccdf eval –profile xccdf_org.customer_profile_rht-ccp_tailored –results /root/openscap-rhel7/scan-xccdf-results7.xml –report /var/www/html/index.html –tailoring-file /usr/share/xml/scap/ssg/content/ssg-rhel7-ds-tailoring.xml /usr/share/xml/scap/ssg/content/ssg-rhel7-ds.xml
 
 profiles
 
@@ -103,11 +103,11 @@ Bekijken van score (nagios checks)
 
 benodigd: perl-XML-XPath rpm
 
-[root@tst-vsu-tst-001 openscap-rhel6]# xpath xccdf-results.xml '/Benchmark/TestResult/score/text()'
+[root@rhelserver openscap-rhel6]# xpath xccdf-results.xml '/Benchmark/TestResult/score/text()'
 Found 1 nodes:
 – NODE –
 51.971725
-[root@tst-vsu-tst-001 openscap-rhel6]# xpath xccdf-results.xml '/Benchmark/TestResult/score'
+[root@rhelserver openscap-rhel6]# xpath xccdf-results.xml '/Benchmark/TestResult/score'
 Found 1 nodes:
 – NODE –
 
