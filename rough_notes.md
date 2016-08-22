@@ -117,3 +117,7 @@ Found 1 nodes:
 
 voorbeeld check_http_xpath.pl (nagios exchange)
 benodigd perl-libwww-perl
+
+
+[root@nagiosna html]# check_http_xpath.pl -H localhost -u /results.xml -w '/Benchmark/TestResult/score/text()>72' -c '/Benchmark/TestResult/score/text()>71'
+CRITICAL: text()=70.586418(<=71)|/Benchmark/TestResult/score/text()=70.586418
