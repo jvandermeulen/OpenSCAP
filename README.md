@@ -1,2 +1,2 @@
 # OpenSCAP
-OpenSCAP config, CLI examples and rough ideas for Nagios checks
+OpenSCAP config, CLI examples and rough ideas for Nagios checks..
